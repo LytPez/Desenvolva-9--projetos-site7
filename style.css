@@ -1,21 +1,43 @@
+/*
+deifindo espaçamento, interno e externo, 
+removendo decoração de texto
+*/
 *{
   margin: 0px;
   padding: 0px;
 }
+/*
+definindo imagem de fundo, não repetir imagem, 
+ajustando para que fique o mais larga possivel cobrindo o 
+body inteiro sem que a imagem fique esticada mantendo um boa proporção
+*/
 body{
   background-image: url(assets/bg.png); 
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/*
+definindo altura e alinhando ao centro na vertical
+*/
 header{
   height: 80px;
   display: flex;
   align-items: center;
 }
+
+/*
+defindo cor, e espaçamento externo a esquerda
+*/
 header h1{
   color: white;
   margin-left: 40px;
 }
+
+/*
+alinhados ao centro verticalmente e com espaçamentos igual entre um e outro
+
+*/
 main{
   display: flex;
   justify-content: space-around;
@@ -23,20 +45,39 @@ main{
   height: calc(100vh - 80px);
   margin: 30px;
 }
+
+/*
+definindo cor, transformando as letras em maiusculas,
+definindo tamanho da font, e espaçamento externo a baixo
+*/
 .conteudo h1{
   color: #ffd22d;
   text-transform: uppercase;
   font-size: 41px;
   margin-bottom: 20px;
 }
+
+/*
+definindo cor, e espaçamento externo a baixo
+*/
 .conteudo h3{
   color: white;
   margin-bottom: 20px;
 }
+
+/*
+definindo cor, e espaçamento externo a baixo
+*/
 .conteudo p{
   color: white;
   margin-bottom: 20px;
 }
+
+/*
+definindo largura, altura, bordas arredondadas, cor de fundo,
+ removendo borda automatica, definindo tamanho da font, 
+ colocando texto em negrito
+*/
 .conteudo button{
   width: 150px;
   height: 50px;
@@ -46,9 +87,17 @@ main{
   border: none;
   font-size: 21px;
 }
+
+/*
+definindo largura
+*/
 .conteudo{
   width: 700px;
 }
+
+/*
+definindo largura e altura
+*/
 main img{
   height: 350px;
   width: 350px;
